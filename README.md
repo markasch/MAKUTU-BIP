@@ -38,8 +38,8 @@ Theoretical and coding exercises.
 
 Bayesian inverse problems.
 
- (a) Bayesian inference.
- (b) Bayesian/Statistical inversion theory.
+ 1. Bayesian inference.
+ 2. Bayesian/Statistical inversion theory.
 
 
 ### Practical
@@ -55,9 +55,9 @@ Theoretical and coding exercises.
 
 Posterior Estimation methods  
   
-  (a) Point and interval estimates.
-  (b) McMC and variants for posterior estimation.
-  (c) V.I. for posterior estimation.
+  1. Point and interval estimates.
+  2. Markov chain Monte Carlo (McMC) and variants for posterior estimation.
+  3. Variationa Inference (VI) for posterior estimation.
 
 ### Practical
 
