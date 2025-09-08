@@ -36,10 +36,11 @@ Theoretical and coding exercises.
 
 ### Lecture
 
-Bayesian inverse problems.
+Bayesian inverse problems (BIP):
 
  1. Bayesian inference.
  2. Bayesian/Statistical inversion theory.
+ 3. Full wave inversion example.
 
 
 ### Practical
@@ -53,7 +54,7 @@ Theoretical and coding exercises.
 
 ### Lecture
 
-Posterior Estimation methods  
+Posterior Estimation methods:  
   
   1. Point and interval estimates.
   2. Markov chain Monte Carlo (McMC) and variants for posterior estimation.
@@ -67,7 +68,7 @@ Theoretical and coding exercises.
 
 ## Day 4
 
-This is an optional, advanced treatment of the Ensemble Kalman approach for solving the BIP. A very complete presentation can be found [here](https://github.com/markasch/kfBIPq).
+This is an optional, advanced treatment of the Ensemble Kalman approach for solving the BIP. A very complete presentation can be found [here](https://markasch.github.io/kfBIPq/).
 
 ### Lecture
 
