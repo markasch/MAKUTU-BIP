@@ -18,7 +18,7 @@ All the above will be presented at the start of the course, making it accessible
 
 ### Lecture
 
-Introduction to inverse problems and data assimilation: 
+[Introduction to inverse problems and data assimilation](./01lectures/10_IP_DA_intro.pdf): 
 
 - overview, 
 - setting, 
@@ -36,7 +36,7 @@ Theoretical and coding exercises.
 
 ### Lecture
 
-Bayesian inverse problems (BIP):
+[Bayesian inverse problems (BIP)](./01lectures/20_BIP.pdf):
 
  1. Bayesian inference.
  2. Bayesian/Statistical inversion theory.
@@ -54,7 +54,7 @@ Theoretical and coding exercises.
 
 ### Lecture
 
-Posterior Estimation methods:  
+[Posterior Estimation methods](./01lectures/30_McMC.pdf):  
   
   1. Point and interval estimates.
   2. Markov chain Monte Carlo (McMC) and variants for posterior estimation.
