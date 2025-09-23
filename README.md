@@ -28,7 +28,12 @@ All the above will be presented at the start of the course, making it accessible
 
 ### Practical
 
-Theoretical and coding exercises.
+Theoretical and coding [exercises](./02practicals/11_IP_DA_intro_prac.pdf).
+
+- ill-posedness
+- constant coefficient deterministic inversion
+- variable coefficient deterministic inversion
+- PDE deterministic inversion
 
 --- 
 
