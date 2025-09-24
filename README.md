@@ -50,7 +50,11 @@ Theoretical and coding [exercises](./02practicals/11_IP_DA_intro_prac.pdf).
 
 ### Practical
 
-Theoretical and coding exercises.
+Theoretical and coding [exercises](./02practicals/21_BIP_prac.pdf):
+
+1. Point estimators (MAP, CM).
+2. Interval estimators (BCI).
+3. Bayesian inverse problem for finite-dimensional, Gaussian case.
 
 --- 
 
