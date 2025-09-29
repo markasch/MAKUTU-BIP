@@ -71,7 +71,12 @@ Theoretical and coding [exercises](./02practicals/21_BIP_prac.pdf):
 
 ### Practical
 
-Theoretical and coding exercises.
+
+1. Monte Carlo intgeration.
+2. Markov chains.
+3. Markov chain Monte Carlo (McMC).
+4. Hamiltonian Monte Carlo.
+5. Variational Inference.
 
 --- 
 
