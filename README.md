@@ -10,7 +10,7 @@ The prerequisites are:
 - partial differential equations,
 - statistical simulation (using python).
 
-All the above will be presented at the start of the course, making it accessible to anyone with reasonable undegraduate training. The course will consist of lectures (mornings) and practical sessions (afternoons). The practical sessions will cover theoretical examples and coding exercises in python. All necessary environments and tools will be explained.
+All the above will be presented at the start of the course, making it accessible to anyone with reasonable undegraduate training. The course will consist of lectures (mornings) and practical sessions (afternoons). The practical sessions will cover theoretical examples and coding exercises in python. All necessary environments and tools are explained [here](./02practicals/00_setup.pdf).
 
 --- 
 
@@ -71,6 +71,7 @@ Theoretical and coding [exercises](./02practicals/21_BIP_prac.pdf):
 
 ### Practical
 
+Theoretical and coding [exercises](./02practicals/31_McMC_prac.pdf):
 
 1. Monte Carlo intgeration.
 2. Markov chains.
