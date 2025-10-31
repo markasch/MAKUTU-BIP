@@ -78,6 +78,7 @@ Theoretical and coding [exercises](./02practicals/31_McMC_prac.pdf):
 3. Markov chain Monte Carlo (McMC).
 4. Hamiltonian Monte Carlo.
 5. Variational Inference.
+6. Probabilistic programming language (`pymc`).
 
 --- 
 
