@@ -7,10 +7,10 @@ The objective of this course is to introduce and develop Bayesian approaches for
 The prerequisites are:
 
 - probability and measure theory,
-- partial differential equations,
+- ordinary and partial differential equations,
 - statistical simulation (using python).
 
-All the above will be presented at the start of the course, making it accessible to anyone with reasonable undegraduate training. The course will consist of lectures (mornings) and practical sessions (afternoons). The practical sessions will cover theoretical examples and coding exercises in python. All necessary environments and tools are explained [here](./02practicals/00_setup.pdf).
+All the required results will be presented at the start of the course, making it accessible to anyone with reasonable undegraduate training. The course will consist of lectures (mornings) and practical sessions (afternoons). The practical sessions will cover theoretical examples and coding exercises in python. All necessary environments and tools are explained [here](./02practicals/00_setup.pdf).
 
 --- 
 
@@ -46,6 +46,7 @@ Theoretical and coding [exercises](./02practicals/11_IP_DA_intro_prac.pdf).
  1. Bayesian inference.
  2. Bayesian/Statistical inversion theory.
  3. Full wave inversion example.
+ 4. Point and interval estimates.
 
 
 ### Practical
@@ -65,9 +66,11 @@ Theoretical and coding [exercises](./02practicals/21_BIP_prac.pdf):
 
 [Posterior Estimation methods](./01lectures/30_McMC.pdf):  
   
-  1. Point and interval estimates.
-  2. Markov chain Monte Carlo (McMC) and variants for posterior estimation.
-  3. Variationa Inference (VI) for posterior estimation.
+  1. Monte Carlo methods. 
+  2. Rejection Sampling. Importance Sampling.
+  3. Markov chain Monte Carlo (McMC) and variants for posterior estimation.
+  4. Metropolis Hastings, Gibbs and Hamiltonian McMC.
+  5. Introduction to Variational Inference (VI) for posterior estimation.
 
 ### Practical
 
