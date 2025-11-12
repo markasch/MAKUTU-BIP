@@ -15,23 +15,44 @@ import pytensor.tensor as pt
 
 from scipy.integrate import odeint
 
+# set up and solve the Lotka-Volterra system
+theta = np.array([0.52, 0.026, 0.84, 0.026, 34.0, 6.0]) 
+time = np.arange(1900, 1921, 0.01)
+def rhs(X, t, theta):
+    # unpack
+    x, y = X
+    alpha, beta, gamma, delta, xt0, yt0 = theta
+    # equations
+    dx_dt = ...
+    dy_dt = ...
+    return [dx_dt, dy_dt]
+# call Scipy's odeint function
+x_y = odeint(func=rhs, y0=theta[-2:], t=time, args=(theta,))
+# plot data and solution
+...
+
+# solve Least Squares deterministic inverse problem
+...
+results = least_squares(ode_model_resid, x0=theta)
+
+# Use PYMC to solve the Bayesian inverse problem:
 # decorator with input and output types a Pytensor double float tensors
 @as_op(itypes=[pt.dvector], otypes=[pt.dmatrix])
 def pytensor_forward_model_matrix(theta):
     return odeint(func=rhs, y0=theta[-2:], t=data.year, args=(theta,))
 
-theta = results.x  # least squares solution used to inform the priors
+theta = results.x  # use Least Squares solution to inform the priors
 with pm.Model() as model:
     # Priors
     alpha = pm.TruncatedNormal("alpha", mu=theta[0], sigma=0.1, lower=0, initval=theta[0])
-    beta = pm.TruncatedNormal("beta", mu=theta[1], sigma=0.01, lower=0, initval=theta[1])
+    beta  = pm.TruncatedNormal("beta", mu=theta[1], sigma=0.01, lower=0, initval=theta[1])
     gamma = pm.TruncatedNormal("gamma", mu=theta[2], sigma=0.1, lower=0, initval=theta[2])
     delta = pm.TruncatedNormal("delta", mu=theta[3], sigma=0.01, lower=0, initval=theta[3])
-    xt0 = pm.TruncatedNormal("xto", mu=theta[4], sigma=1, lower=0, initval=theta[4])
-    yt0 = pm.TruncatedNormal("yto", mu=theta[5], sigma=1, lower=0, initval=theta[5])
+    xt0   = pm.TruncatedNormal("xto", mu=theta[4], sigma=1, lower=0, initval=theta[4])
+    yt0   = pm.TruncatedNormal("yto", mu=theta[5], sigma=1, lower=0, initval=theta[5])
     sigma = pm.HalfNormal("sigma", 10)
 
-    # Ode solution function
+    # ODE solution function
     ode_solution = pytensor_forward_model_matrix(
         pm.math.stack([alpha, beta, gamma, delta, xt0, yt0])
     )
@@ -42,6 +63,7 @@ with pm.Model() as model:
 # Variable list to give to the sample step parameter
 vars_list = list(model.values_to_rvs.keys())[:-1]
 
+# sample the chain...
 sampler = "DEMetropolis"
 chains = 8
 draws = 6000
