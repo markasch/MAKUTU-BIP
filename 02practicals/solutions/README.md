@@ -11,5 +11,5 @@
 
 __NOTE__
 
-Solutions will be only posted at the end of each Practical session.
+Solutions will only be posted at the *end* of each Practical session.
 
